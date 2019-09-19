@@ -1,4 +1,4 @@
-FROM redis:4.0.2-alpine
+FROM redis:latest
 
 MAINTAINER Tommy Elmesewdy <r1tommy@gmail.com>
 

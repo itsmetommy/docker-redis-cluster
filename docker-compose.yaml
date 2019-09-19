@@ -67,18 +67,3 @@ services:
     networks:
       redisnet:
         ipv4_address: 10.0.0.7
-
-  redis-ruby:
-    container_name: redis-ruby
-    build: redis-ruby
-    image: ruby
-    depends_on:
-      - redis-1
-      - redis-2
-      - redis-3
-      - redis-4
-      - redis-5
-      - redis-6
-    networks:
-      redisnet:
-        ipv4_address: 10.0.0.8
