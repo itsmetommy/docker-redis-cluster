@@ -32,6 +32,8 @@ services:
     networks:
       redisnet:
         ipv4_address: 10.0.0.11
+    ports:
+      - 7001:6379
 
   redis-2:
     image: redis-cluster-node
@@ -40,6 +42,8 @@ services:
     networks:
       redisnet:
         ipv4_address: 10.0.0.12
+    ports:
+      - 7002:6379
 
   redis-3:
     image: redis-cluster-node
@@ -48,6 +52,8 @@ services:
     networks:
       redisnet:
         ipv4_address: 10.0.0.13
+    ports:
+      - 7003:6379
 
   redis-4:
     image: redis-cluster-node
@@ -56,6 +62,8 @@ services:
     networks:
       redisnet:
         ipv4_address: 10.0.0.14
+    ports:
+      - 7004:6379
 
   redis-5:
     image: redis-cluster-node
@@ -64,6 +72,8 @@ services:
     networks:
       redisnet:
         ipv4_address: 10.0.0.15
+    ports:
+      - 7005:6379
 
   redis-6:
     image: redis-cluster-node
@@ -72,3 +82,5 @@ services:
     networks:
       redisnet:
         ipv4_address: 10.0.0.16
+    ports:
+      - 7006:6379
